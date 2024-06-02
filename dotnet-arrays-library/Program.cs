@@ -1,4 +1,4 @@
-using dotnet_arrays_library.Layers.UI.Maintenances;
+using dotnet_arrays_library.Layers.UI;
 
 namespace dotnet_arrays_library
 {
@@ -13,9 +13,7 @@ namespace dotnet_arrays_library
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            frmMaintenanceCategoryMovie frmMaintenanceCategoryMovie = new frmMaintenanceCategoryMovie();
-
-            Application.Run(new frmMaintenanceCategoryMovie());
+            Application.Run(new frmPrincipal ());
         }
     }
 }

@@ -17,7 +17,6 @@ namespace dotnet_arrays_library.Layers.DAL
             return await Task.FromResult(categoryMovies);
         }
 
-
         public async Task<CategoryMovie> SaveCategoryMovie(CategoryMovie pCategoryMovie)
         {
             if (categoryMovies.Any(cat => cat.IdCategory == pCategoryMovie.IdCategory)) throw new Exception("IdCategory already exists");

@@ -34,7 +34,7 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
                     return;
                 }
 
-                if(!int.TryParse(txtIdCategory.Text, out int idCategory))
+                if (!int.TryParse(txtIdCategory.Text, out int idCategory))
                 {
                     MessageBox.Show("Please enter a valid number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.txtIdCategory.Focus();
@@ -151,6 +151,22 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.ChangeState(MaintenanceStatus.None);
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            frmPrincipal ofrmPrincipal;
+            try
+            {
+                ofrmPrincipal = new frmPrincipal();
+                ofrmPrincipal.Show();
+                this.Hide();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

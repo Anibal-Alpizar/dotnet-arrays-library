@@ -41,6 +41,7 @@
             toolStripBtnNew = new ToolStripButton();
             toolStripButton2 = new ToolStripButton();
             btnCancel = new Button();
+            toolStripButton1 = new ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             tspPrincipal.SuspendLayout();
             SuspendLayout();
@@ -115,7 +116,7 @@
             // 
             // tspPrincipal
             // 
-            tspPrincipal.Items.AddRange(new ToolStripItem[] { toolStripBtnNew, toolStripButton2 });
+            tspPrincipal.Items.AddRange(new ToolStripItem[] { toolStripBtnNew, toolStripButton2, toolStripButton1 });
             tspPrincipal.Location = new Point(0, 0);
             tspPrincipal.Name = "tspPrincipal";
             tspPrincipal.Size = new Size(800, 25);
@@ -152,6 +153,16 @@
             btnCancel.TextImageRelation = TextImageRelation.ImageAboveText;
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(23, 22);
+            toolStripButton1.Text = "toolStripBtnBack";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // frmMaintenanceCategoryMovie
             // 
@@ -192,5 +203,6 @@
         private ToolStripButton toolStripBtnNew;
         private ToolStripButton toolStripButton2;
         private Button btnCancel;
+        private ToolStripButton toolStripButton1;
     }
 }

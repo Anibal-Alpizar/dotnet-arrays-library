@@ -16,3 +16,5 @@ C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\ne
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet-arrays-library.genruntimeconfig.cache
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\ref\dotnet-arrays-library.dll
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Properties.Resources.resources
+C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.frmPrincipal.resources
+C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.Maintenances.frmMaintenanceMovie.resources
