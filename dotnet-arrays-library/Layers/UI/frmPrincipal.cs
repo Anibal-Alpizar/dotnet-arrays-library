@@ -32,7 +32,6 @@ namespace dotnet_arrays_library.Layers.UI
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -42,6 +41,21 @@ namespace dotnet_arrays_library.Layers.UI
             {
                 ofrmMaintenanceMovie = new frmMaintenanceMovie();
                 ofrmMaintenanceMovie.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMaintenanceManager ofrmMaintenanceManager;
+            try
+            {
+                ofrmMaintenanceManager = new frmMaintenanceManager();
+                ofrmMaintenanceManager.Show();
                 this.Hide();
             }
             catch (Exception ex)
