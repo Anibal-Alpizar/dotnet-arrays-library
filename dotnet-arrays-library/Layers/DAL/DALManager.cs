@@ -21,6 +21,9 @@ namespace dotnet_arrays_library.Layers.DAL
         {
             if (managers.Any(man => man.IdManager == oManager.IdManager)) throw new Exception("IdManager already exists");
 
+            if (managers.Any(man => man.Identification == oManager.Identification && man.IdManager != oManager.IdManager))
+                throw new Exception("Identification already exists for another manager");
+
             if (managers.Count >= 20) throw new Exception("Manager list is full");
 
             managers.Add(oManager);

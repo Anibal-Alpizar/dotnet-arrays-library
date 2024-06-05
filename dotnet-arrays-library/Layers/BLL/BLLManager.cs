@@ -17,12 +17,12 @@ namespace dotnet_arrays_library.Layers.BLL
             return await _DALManager.GetManagers();
         }
 
-        public Task<Manager> SaveManager(Manager oManager)
+        public Task<Manager> SaveManager(Manager pManager)
         {
             IDALManager _DALManager = new DALManager();
-            Task<Manager> oManagerResult = null;
-            oManagerResult = _DALManager.SaveManager(oManager);
-            return oManagerResult;
+            Task<Manager> oManager = null;
+            oManager = _DALManager.SaveManager(pManager);
+            return oManager;
         }
     }
 }

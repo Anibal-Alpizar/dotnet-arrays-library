@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\entities\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\entities\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DALManager.cs",
+              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\DAL\\DALManager.cs",
+              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\DAL\\DALManager.cs",
+              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\DAL\\DALManager.cs",
+              "RelativeToolTip": "dotnet-arrays-library\\Layers\\DAL\\DALManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T19:22:47.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\Entities\\Manager.cs",
+              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\Entities\\Manager.cs",
+              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\Entities\\Manager.cs",
+              "RelativeToolTip": "dotnet-arrays-library\\Layers\\Entities\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T19:22:40.401Z",
+              "EditorCaption": ""
             }
           ]
         }
