@@ -4,6 +4,9 @@
     <Compile Update="Layers\UI\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Layers\UI\Maintenances\frmMaintenanceBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Layers\UI\Maintenances\frmMaintenanceCategoryMovie.cs">
       <SubType>Form</SubType>
     </Compile>

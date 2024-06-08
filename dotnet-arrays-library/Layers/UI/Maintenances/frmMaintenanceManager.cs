@@ -45,6 +45,24 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
                     return;
                 }
 
+                if (dtpAdmissionDate.Value < dtpBirthDate.Value)
+                {
+                    MessageBox.Show("Admission date can't be greater than birth date", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (dtpBirthDate.Value > DateTime.Now)
+                {
+                    MessageBox.Show("Birth date can't be greater than current date", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (dtpAdmissionDate.Value > DateTime.Now)
+                {
+                    MessageBox.Show("Admission date can't be greater than current date", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 oManager.IdManager = Convert.ToInt32(txtIdManager.Text);
                 oManager.Identification = txtIdentificationManager.Text;
                 oManager.Name = txtNameManager.Text;

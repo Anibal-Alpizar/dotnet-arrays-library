@@ -33,8 +33,9 @@
             toolStripMenuItemMaintenance = new ToolStripMenuItem();
             toolStripMenuItemCategories = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
-            toolStripMenuItemAbout = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripMenuItem3 = new ToolStripMenuItem();
+            toolStripMenuItemAbout = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             // toolStripMenuItemMaintenance
             // 
-            toolStripMenuItemMaintenance.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemCategories, toolStripMenuItem2, toolStripMenuItem1 });
+            toolStripMenuItemMaintenance.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemCategories, toolStripMenuItem2, toolStripMenuItem1, toolStripMenuItem3 });
             toolStripMenuItemMaintenance.Image = (Image)resources.GetObject("toolStripMenuItemMaintenance.Image");
             toolStripMenuItemMaintenance.ImageScaling = ToolStripItemImageScaling.None;
             toolStripMenuItemMaintenance.Name = "toolStripMenuItemMaintenance";
@@ -72,6 +73,20 @@
             toolStripMenuItem2.Text = "Movies";
             toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(180, 22);
+            toolStripMenuItem1.Text = "Managers";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            // 
+            // toolStripMenuItem3
+            // 
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new Size(180, 22);
+            toolStripMenuItem3.Text = "Branches";
+            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
+            // 
             // toolStripMenuItemAbout
             // 
             toolStripMenuItemAbout.Image = (Image)resources.GetObject("toolStripMenuItemAbout.Image");
@@ -79,13 +94,6 @@
             toolStripMenuItemAbout.Name = "toolStripMenuItemAbout";
             toolStripMenuItemAbout.Size = new Size(100, 52);
             toolStripMenuItemAbout.Text = "About";
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(180, 22);
-            toolStripMenuItem1.Text = "Managers";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // frmPrincipal
             // 
@@ -110,5 +118,6 @@
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItemAbout;
         private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem toolStripMenuItem3;
     }
 }

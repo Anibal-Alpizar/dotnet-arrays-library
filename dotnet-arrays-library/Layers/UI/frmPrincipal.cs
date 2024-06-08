@@ -63,5 +63,20 @@ namespace dotnet_arrays_library.Layers.UI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            frmMaintenanceBranch ofrmMaintenanceBranch;
+            try
+            {
+                ofrmMaintenanceBranch = new frmMaintenanceBranch();
+                ofrmMaintenanceBranch.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }
