@@ -78,5 +78,20 @@ namespace dotnet_arrays_library.Layers.UI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void clientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaintenanceClient ofrmMaintenanceClient;
+            try
+            {
+                ofrmMaintenanceClient = new frmMaintenanceClient();
+                ofrmMaintenanceClient.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

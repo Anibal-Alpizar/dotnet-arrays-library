@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenanceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenanceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenanceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenanceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 183,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -27,27 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMaintenanceBranch.cs",
-              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs",
-              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs",
-              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs*",
-              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs*",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAowIIAAAAjAAAA",
+              "Title": "frmMaintenanceClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs [Design]",
+              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T22:07:37.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T05:35:46.249Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmMaintenanceBranch.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs",
-              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs",
-              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs [Design]*",
-              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceBranch.cs [Design]*",
+              "Title": "frmMaintenanceClient.cs",
+              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceClient.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAmwNkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T22:07:11.943Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-11T05:24:36.108Z",
+              "EditorCaption": ""
             }
           ]
         }

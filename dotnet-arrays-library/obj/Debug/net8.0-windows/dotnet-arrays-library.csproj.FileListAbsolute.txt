@@ -20,3 +20,4 @@ C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\ne
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.Maintenances.frmMaintenanceMovie.resources
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.Maintenances.frmMaintenanceManager.resources
 C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.Maintenances.frmMaintenanceBranch.resources
+C:\Users\anibal\Desktop\dotnet-arrays-library\dotnet-arrays-library\obj\Debug\net8.0-windows\dotnet_arrays_library.Layers.UI.Maintenances.frmMaintenanceClient.resources
