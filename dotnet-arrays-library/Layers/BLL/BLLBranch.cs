@@ -24,5 +24,11 @@ namespace dotnet_arrays_library.Layers.BLL
             oBranch = _DALBranch.SaveBranch(pBranch);
             return oBranch;
         }
+
+        public async Task<List<Branch>> GetAvailableBranches()
+        {
+            IDALBranch _DALBranch = new DALBranch();
+            return await _DALBranch.GetAvailableBranches();
+        }
     }
 }

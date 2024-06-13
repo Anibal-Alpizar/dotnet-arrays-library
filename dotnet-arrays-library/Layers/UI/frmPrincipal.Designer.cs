@@ -35,8 +35,9 @@
             toolStripMenuItem2 = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
             toolStripMenuItem3 = new ToolStripMenuItem();
-            toolStripMenuItemAbout = new ToolStripMenuItem();
             clientsToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItemAbout = new ToolStripMenuItem();
+            movieXBranchesToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // 
             // toolStripMenuItemMaintenance
             // 
-            toolStripMenuItemMaintenance.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemCategories, toolStripMenuItem2, toolStripMenuItem1, toolStripMenuItem3, clientsToolStripMenuItem });
+            toolStripMenuItemMaintenance.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItemCategories, toolStripMenuItem2, toolStripMenuItem1, toolStripMenuItem3, clientsToolStripMenuItem, movieXBranchesToolStripMenuItem });
             toolStripMenuItemMaintenance.Image = (Image)resources.GetObject("toolStripMenuItemMaintenance.Image");
             toolStripMenuItemMaintenance.ImageScaling = ToolStripItemImageScaling.None;
             toolStripMenuItemMaintenance.Name = "toolStripMenuItemMaintenance";
@@ -88,6 +89,13 @@
             toolStripMenuItem3.Text = "Branches";
             toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
+            // clientsToolStripMenuItem
+            // 
+            clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            clientsToolStripMenuItem.Size = new Size(180, 22);
+            clientsToolStripMenuItem.Text = "Clients";
+            clientsToolStripMenuItem.Click += clientsToolStripMenuItem_Click;
+            // 
             // toolStripMenuItemAbout
             // 
             toolStripMenuItemAbout.Image = (Image)resources.GetObject("toolStripMenuItemAbout.Image");
@@ -96,12 +104,12 @@
             toolStripMenuItemAbout.Size = new Size(100, 52);
             toolStripMenuItemAbout.Text = "About";
             // 
-            // clientsToolStripMenuItem
+            // movieXBranchesToolStripMenuItem
             // 
-            clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
-            clientsToolStripMenuItem.Size = new Size(180, 22);
-            clientsToolStripMenuItem.Text = "Clients";
-            clientsToolStripMenuItem.Click += clientsToolStripMenuItem_Click;
+            movieXBranchesToolStripMenuItem.Name = "movieXBranchesToolStripMenuItem";
+            movieXBranchesToolStripMenuItem.Size = new Size(180, 22);
+            movieXBranchesToolStripMenuItem.Text = "Movie x Branches";
+            movieXBranchesToolStripMenuItem.Click += movieXBranchesToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
@@ -128,5 +136,6 @@
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem clientsToolStripMenuItem;
+        private ToolStripMenuItem movieXBranchesToolStripMenuItem;
     }
 }

@@ -11,5 +11,6 @@ namespace dotnet_arrays_library.Interfaces
     {
         Task<Branch> SaveBranch(Branch pBranch);
         Task<List<Branch>> GetBranches();
+        Task<List<Branch>> GetAvailableBranches();
     }
 }

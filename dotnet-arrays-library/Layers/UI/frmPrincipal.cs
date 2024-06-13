@@ -93,5 +93,20 @@ namespace dotnet_arrays_library.Layers.UI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void movieXBranchesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaintenanceMovieBranch ofrmMaintenanceMovieBranch;
+            try
+            {
+                ofrmMaintenanceMovieBranch = new frmMaintenanceMovieBranch();
+                ofrmMaintenanceMovieBranch.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

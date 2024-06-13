@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace dotnet_arrays_library.Interfaces
 {
-    public interface IDALBranch
+    public interface IBLLMovieBranch
     {
-        Task<List<Branch>> GetBranches();
-        Task<Branch> SaveBranch(Branch pBranch);
-        Task<List<Branch>> GetAvailableBranches();
+        Task<List<MovieBranch>> GetMovieBranches();
+        Task<MovieBranch> SaveMovieBranch(MovieBranch movieBranch);
+        Task<List<Movie>> GetAvailableMovies();
     }
 }

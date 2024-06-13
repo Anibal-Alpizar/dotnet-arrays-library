@@ -19,5 +19,8 @@
     <Compile Update="Layers\UI\Maintenances\frmMaintenanceManager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Layers\UI\Maintenances\frmMaintenanceMovieBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

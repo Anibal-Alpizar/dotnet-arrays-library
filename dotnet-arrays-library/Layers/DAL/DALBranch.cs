@@ -18,6 +18,13 @@ namespace dotnet_arrays_library.Layers.DAL
             return await Task.FromResult(branches);
         }
 
+        public async Task<List<Branch>> GetAvailableBranches()
+        {
+            var branches = await GetBranches();
+
+            return branches.Where(br => br.Active).Select(br => new Branch { Name = br.Name }).ToList();
+        }
+
         public async Task<Branch> SaveBranch(Branch pBranch)
         {
             var managers = await _DALManager.GetManagers();
