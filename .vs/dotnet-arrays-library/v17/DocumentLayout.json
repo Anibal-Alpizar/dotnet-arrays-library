@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancemoviebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancemoviebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancemoviebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\maintenances\\frmmaintenancemoviebranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|c:\\users\\anibal\\desktop\\dotnet-arrays-library\\dotnet-arrays-library\\layers\\ui\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F491CE6-1102-4AB5-BF5C-D9223A366AC8}|dotnet-arrays-library\\dotnet-arrays-library.csproj|solutionrelative:dotnet-arrays-library\\layers\\ui\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,34 +28,10 @@
               "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs",
               "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs",
               "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAkwN4AAAAAAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAiwHgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T04:16:49.771Z",
+              "WhenOpened": "2024-06-16T04:19:40.428Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMaintenanceMovieBranch.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs",
-              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs",
-              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs [Design]",
-              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\Maintenances\\frmMaintenanceMovieBranch.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T04:16:46.998Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "dotnet-arrays-library\\Layers\\UI\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\anibal\\Desktop\\dotnet-arrays-library\\dotnet-arrays-library\\Layers\\UI\\frmPrincipal.cs [Design]",
-              "RelativeToolTip": "dotnet-arrays-library\\Layers\\UI\\frmPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T04:16:43.749Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

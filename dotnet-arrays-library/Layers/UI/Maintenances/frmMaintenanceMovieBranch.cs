@@ -87,34 +87,32 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
             IBLLMovieBranch _BLLMovieBranch = new BLLMovieBranch();
             try
             {
-                MovieBranch oMovieBranch = new MovieBranch();
+                List<MovieBranch> selectedMovieBranches = new List<MovieBranch>();
 
-                if (dgvAvailableMovies.CurrentRow == null)
+                foreach (DataGridViewRow row in dgvAvailableMovies.SelectedRows)
                 {
-                    MessageBox.Show("You must select a movie", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MovieBranch oMovieBranch = new MovieBranch();
+
+                    oMovieBranch.Movie = new Movie { IdMovie = Convert.ToInt32(row.Cells["IdMovie"].Value) };
+                    oMovieBranch.Branch = new Branch { Name = cmbBranches.SelectedItem.ToString() };
+                    oMovieBranch.Quantity = Convert.ToInt32(txtQuantity.Text);
+
+                    selectedMovieBranches.Add(oMovieBranch);
+                }
+
+                if (selectedMovieBranches.Count == 0)
+                {
+                    MessageBox.Show("You must select at least one movie", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                if (!int.TryParse(txtQuantity.Text, out int quantity))
+                foreach (MovieBranch movieBranch in selectedMovieBranches)
                 {
-                    MessageBox.Show("Quantity must be a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    await _BLLMovieBranch.SaveMovieBranch(movieBranch);
                 }
 
-                if (quantity <= 0)
-                {
-                    MessageBox.Show("Quantity must be greater than 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                oMovieBranch.Movie = new Movie { IdMovie = Convert.ToInt32(dgvAvailableMovies.CurrentRow.Cells[0].Value) };
-                oMovieBranch.Branch = new Branch { Name = cmbBranches.SelectedItem.ToString() };
-                oMovieBranch.Quantity = Convert.ToInt32(txtQuantity.Text);
-
-                oMovieBranch = await _BLLMovieBranch.SaveMovieBranch(oMovieBranch);
-
-                if (oMovieBranch != null)
-                    this.LoadData();
+                MessageBox.Show("Movies saved successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.LoadData();
 
             }
             catch (Exception ex)
