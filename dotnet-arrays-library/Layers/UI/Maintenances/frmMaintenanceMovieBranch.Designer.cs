@@ -41,8 +41,11 @@
             cmbBranches = new ComboBox();
             dgvAvailableMovies = new DataGridView();
             label1 = new Label();
+            dvgRegisteredMovies = new DataGridView();
+            label2 = new Label();
             tspPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvAvailableMovies).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dvgRegisteredMovies).BeginInit();
             SuspendLayout();
             // 
             // btnCancel
@@ -144,7 +147,7 @@
             // dgvAvailableMovies
             // 
             dgvAvailableMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAvailableMovies.Location = new Point(22, 114);
+            dgvAvailableMovies.Location = new Point(15, 84);
             dgvAvailableMovies.Name = "dgvAvailableMovies";
             dgvAvailableMovies.Size = new Size(307, 159);
             dgvAvailableMovies.TabIndex = 39;
@@ -152,17 +155,36 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(102, 74);
+            label1.Location = new Point(95, 44);
             label1.Name = "label1";
             label1.Size = new Size(96, 15);
             label1.TabIndex = 24;
             label1.Text = "Movies Available";
+            // 
+            // dvgRegisteredMovies
+            // 
+            dvgRegisteredMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvgRegisteredMovies.Location = new Point(15, 290);
+            dvgRegisteredMovies.Name = "dvgRegisteredMovies";
+            dvgRegisteredMovies.Size = new Size(307, 159);
+            dvgRegisteredMovies.TabIndex = 41;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(95, 250);
+            label2.Name = "label2";
+            label2.Size = new Size(103, 15);
+            label2.TabIndex = 40;
+            label2.Text = "Registered movies";
             // 
             // frmMaintenanceMovieBranch
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 450);
+            Controls.Add(dvgRegisteredMovies);
+            Controls.Add(label2);
             Controls.Add(dgvAvailableMovies);
             Controls.Add(cmbBranches);
             Controls.Add(tspPrincipal);
@@ -178,6 +200,7 @@
             tspPrincipal.ResumeLayout(false);
             tspPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvAvailableMovies).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dvgRegisteredMovies).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +218,7 @@
         private ComboBox cmbBranches;
         private DataGridView dgvAvailableMovies;
         private Label label1;
+        private DataGridView dvgRegisteredMovies;
+        private Label label2;
     }
 }

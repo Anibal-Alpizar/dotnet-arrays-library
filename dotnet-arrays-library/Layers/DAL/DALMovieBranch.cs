@@ -1,5 +1,7 @@
 ﻿using dotnet_arrays_library.Interfaces;
 using dotnet_arrays_library.Layers.Entities;
+using dotnet_arrays_library.Layers.Entities.dto;
+using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,5 +46,43 @@ namespace dotnet_arrays_library.Layers.DAL
 
             return await Task.FromResult(availableMovies);
         }
+
+        public async Task<List<MovieBranchDTO>> GetFullMovieBranchInfo()
+        {
+            var branches = await _DALBranch.GetBranches();
+            var movies = await _DALMovie.GetAllMovies();
+
+            var fullInfoList = new List<MovieBranchDTO>();
+
+            foreach (var mb in movieBranches)
+            {
+                var branch = branches.FirstOrDefault(b => b.Name == mb.Branch.Name);
+                var movie = movies.FirstOrDefault(m => m.IdMovie == mb.Movie.IdMovie);
+
+                if (branch != null && movie != null)
+                {
+                    var fullInfo = new MovieBranchDTO
+                    {
+                        BranchId = branch.IdBranch,
+                        BranchName = branch.Name,
+                        BranchManager = branch.Manager,
+                        BranchAddress = branch.Address,
+                        BranchPhone = branch.Phone,
+                        BranchActive = branch.Active,
+                        MovieId = movie.IdMovie,
+                        MovieTitle = movie.Title,
+                        MovieCategory = movie.CategoryMovie,
+                        MovieYear = movie.Year,
+                        MovieLanguage = movie.Language,
+                        Quantity = mb.Quantity
+                    };
+
+                    fullInfoList.Add(fullInfo);
+                }
+            }
+
+            return fullInfoList;
+        }
+
     }
 }

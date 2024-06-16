@@ -1,6 +1,7 @@
 ﻿using dotnet_arrays_library.Interfaces;
 using dotnet_arrays_library.Layers.DAL;
 using dotnet_arrays_library.Layers.Entities;
+using dotnet_arrays_library.Layers.Entities.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,12 @@ namespace dotnet_arrays_library.Layers.BLL
         {
             IDALMovieBranch _DALMovieBranch = new DALMovieBranch();
             return await _DALMovieBranch.GetAvailableMovies();
+        }
+
+        public async Task<List<MovieBranchDTO>> GetFullMovieBranchInfo()
+        {
+            IDALMovieBranch _DALMovieBranch = new DALMovieBranch();
+            return await _DALMovieBranch.GetFullMovieBranchInfo();
         }
     }
 }

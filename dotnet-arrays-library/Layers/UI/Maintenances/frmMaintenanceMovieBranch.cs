@@ -1,6 +1,8 @@
 ﻿using dotnet_arrays_library.Interfaces;
 using dotnet_arrays_library.Layers.BLL;
+using dotnet_arrays_library.Layers.DAL;
 using dotnet_arrays_library.Layers.Entities;
+using dotnet_arrays_library.Layers.Entities.dto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +36,7 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
 
             this.txtQuantity.Enabled = false;
             this.cmbBranches.Enabled = false;
+            this.dgvAvailableMovies.Enabled = false;
 
             this.btnAccept.Enabled = false;
             this.btnCancel.Enabled = false;
@@ -43,7 +46,7 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
                 case MaintenanceStatus.New:
                     this.txtQuantity.Enabled = true;
                     this.cmbBranches.Enabled = true;
-
+                    this.dgvAvailableMovies.Enabled = true;
 
                     this.btnAccept.Enabled = true;
                     this.btnCancel.Enabled = true;
@@ -127,6 +130,7 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
 
             List<Branch> listBranches = new List<Branch>();
             List<Movie> listMoviesAvailable = new List<Movie>();
+            List<MovieBranchDTO> listMovieBranches = new List<MovieBranchDTO>();
             try
             {
                 this.ChangeState(MaintenanceStatus.None);
@@ -134,6 +138,22 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
                 await Task.Delay(1000);
 
                 List<MovieBranch> movieBranches = await _BLLMovieBranch.GetMovieBranches();
+                List<MovieBranchDTO> movieBranchesDTO = await _BLLMovieBranch.GetFullMovieBranchInfo();
+
+                this.dvgRegisteredMovies.Columns.Clear();
+
+                if (dvgRegisteredMovies.Columns.Count == 0)
+                {
+                    InitializeDataGridViewRegisteredMovies();
+                }
+
+                dvgRegisteredMovies.Rows.Clear();
+
+                foreach (MovieBranchDTO movieBranch in movieBranchesDTO)
+                {
+                    dvgRegisteredMovies.Rows.Add(movieBranch.BranchId, movieBranch.BranchName, movieBranch.BranchAddress, movieBranch.BranchPhone, movieBranch.BranchActive, movieBranch.MovieId, movieBranch.MovieTitle,
+                       movieBranch.MovieYear, movieBranch.MovieLanguage, movieBranch.Quantity);
+                }
 
                 listBranches = await _BLLBranch.GetAvailableBranches();
 
@@ -178,7 +198,21 @@ namespace dotnet_arrays_library.Layers.UI.Maintenances
             dgvAvailableMovies.Columns.Add("Language", "Language");
         }
 
-        // private void 
+        private void InitializeDataGridViewRegisteredMovies()
+        {
+            dvgRegisteredMovies.Columns.Clear();
+
+            dvgRegisteredMovies.Columns.Add("BranchId", "Branch Id");
+            dvgRegisteredMovies.Columns.Add("BranchName", "Branch Name");
+            dvgRegisteredMovies.Columns.Add("BranchAddress", "Branch Address");
+            dvgRegisteredMovies.Columns.Add("BranchPhone", "Branch Phone");
+            dvgRegisteredMovies.Columns.Add("BranchActive", "Branch Active");
+            dvgRegisteredMovies.Columns.Add("MovieId", "Movie Id");
+            dvgRegisteredMovies.Columns.Add("MovieTitle", "Movie Title");
+            dvgRegisteredMovies.Columns.Add("MovieYear", "Movie Year");
+            dvgRegisteredMovies.Columns.Add("MovieLanguage", "Movie Language");
+            dvgRegisteredMovies.Columns.Add("Quantity", "Quantity");
+        }
 
         private void frmMaintenanceMovieBranch_Load(object sender, EventArgs e)
         {

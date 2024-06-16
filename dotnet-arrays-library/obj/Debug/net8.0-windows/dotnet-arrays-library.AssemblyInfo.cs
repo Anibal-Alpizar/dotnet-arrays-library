@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-arrays-library")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49e5678a420919c42db888bbf55b6d52a95254d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43355722e46c38a07ed41bdfce4647b69f980bf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-arrays-library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-arrays-library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
